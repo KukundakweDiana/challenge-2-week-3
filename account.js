@@ -57,12 +57,12 @@ class BankAccount {
   }
 }
 let BankAccount1 = new BankAccount(
-  (BankAccount1.first_name = "diana"),
-  (BankAccount1.last_name = "kukundakwe"),
-  (BankAccount1.account_status = "active"),
-  (BankAccount1.account_number = "211178886"),
-  (BankAccount1.account_balance = 556.78),
-  (BankAccount1.withdraw_method = "mobilephone")
+  "diana",
+  "kukundakwe",
+  "active",
+  "211178886",
+  556.78,
+  "mobilephone"
 );
 BankAccount1.getBalance();
 
