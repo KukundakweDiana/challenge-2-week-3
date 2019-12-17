@@ -13,9 +13,9 @@ class BankAccount {
     this.account_number = account_number;
     this.account_balance = account_balance;
     this.withdraw_method = withdraw_method;
-    this.balances = getBalance;
-    this.newbalance = withdraw;
-    this.deposited = deposit;
+    this.balances = 0;
+    this.newbalance = 0;
+    this.deposited = 0;
   }
 
   // your code here
