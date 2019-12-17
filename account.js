@@ -1,34 +1,32 @@
 class BankAccount {
-  constructor() {
-    function person(
-      first_name,
-      last_name,
-      account_status,
-      account_number,
-      account_balance,
-      withdraw_method
-    ) {
-      this.first_name = first_name;
-      this.last_name = last_name;
-      this.account_status = account_status;
-      this.account_number = account_number;
-      this.account_balance = account_balance;
-      this.withdraw_method = withdraw_method;
-      this.balances = getBalance;
-      this.newbalance = withdraw;
-      this.deposited = deposit;
-    }
+  constructor(
+    first_name,
+    last_name,
+    account_status,
+    account_number,
+    account_balance,
+    withdraw_method
+  ) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.account_status = account_status;
+    this.account_number = account_number;
+    this.account_balance = account_balance;
+    this.withdraw_method = withdraw_method;
+    this.balances = getBalance;
+    this.newbalance = withdraw;
+    this.deposited = deposit;
   }
 
   // your code here
 
   getBalance() {
     var balances = this.account_balance;
-    return balances;
+    return `(${this.balances})`;
     // your code here
   }
 
-  open() {
+  setopen() {
     if (this.account_status !== null) {
       this.account_status = "active";
 
@@ -40,19 +38,19 @@ class BankAccount {
     // your code here
   }
 
-  deposit() {
+  getdeposit() {
     var deposits = this.account_balance + 300;
-    return deposits;
+    return `(${this.deposits})`;
     // your code here
   }
 
-  withdraw() {
+  getwithdraw() {
     var newBalance = this.account_balance - 200;
-    return newBalance;
+    return `(${this.newBalance})`;
     // your code here
   }
 
-  close() {
+  setclose() {
     this.status = "closed";
 
     return "account is now closed";
