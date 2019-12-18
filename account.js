@@ -13,17 +13,11 @@ class BankAccount {
     this.account_number = account_number;
     this.account_balance = account_balance;
     this.withdraw_method = withdraw_method;
-    this.balances = 0;
-    this.newbalance = 0;
-    this.deposited = 0;
   }
-
-  // your code here
 
   getBalance() {
     var balances = this.account_balance;
-    return `(${this.balances})`;
-    // your code here
+    return balances;
   }
 
   setopen() {
@@ -34,20 +28,16 @@ class BankAccount {
     } else {
       return "account already exists";
     }
-
-    // your code here
   }
 
   getdeposit() {
     var deposits = this.account_balance + 300;
-    return `(${this.deposits})`;
-    // your code here
+    return deposits;
   }
 
   getwithdraw() {
     var newBalance = this.account_balance - 200;
-    return `(${this.newBalance})`;
-    // your code here
+    return newBalance;
   }
 
   setclose() {
@@ -64,7 +54,17 @@ let BankAccount1 = new BankAccount(
   556.78,
   "mobilephone"
 );
+BankAccount1.setopen();
+BankAccount1.getdeposit();
 BankAccount1.getBalance();
+BankAccount1.getwithdraw();
+BankAccount1.setclose();
 
-console.log(`the current balance is ${BankAccount1.getBalance()}`);
+// console.log(`the current status is ${BankAccount1.getBalance()}`);
+// console.log(`the current balance is ${BankAccount1.getBalance()}`);
+// console.log(`the current balance is ${BankAccount1.getBalance()}`);
+// console.log(`the current balance is ${BankAccount1.getBalance()}`);
+// console.log(`the current balance is ${BankAccount1.getBalance()}`);
+// console.log(`the current balance is ${BankAccount1.getBalance()}`);
+
 // module.exports = BankAccount;
